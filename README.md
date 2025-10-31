@@ -1,4 +1,4 @@
-<h1 align="center">Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging
+# Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging
 
 This is the official implementation of our paper **Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging** ([arxiv](https://arxiv.org/abs/2510.14697)).
 
