@@ -17,7 +17,7 @@ Run EMR-Merging
 > python main_emr_merging.py
 
 Run EMR-Merging with PAVE
-> python 
+> python PAVE_emr_merging.py
 
 The recommended setting is num_examples = 4096. If an out-of-memory issue occurs, you may reduce it to num_examples = 1024 for ViT-14-L.
 
