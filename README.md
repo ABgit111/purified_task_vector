@@ -3,7 +3,7 @@
 This is the official implementation of our paper **Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging** ([arxiv](https://arxiv.org/abs/2510.14697)).
 
 We provide the code for merging on [GLUE benchmarks](./GLUE) (including RoBERTa and DeBERTa), [NLG tasks](./NLG), and [ViT models](./ViT).
-<img src='./images/fig1_v3.pdf'>
+<img src='./images/fig1_v3.png'>
 
 
 Our implementation is based on the code below. We appreciate their contribution.
