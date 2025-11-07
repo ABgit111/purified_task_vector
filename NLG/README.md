@@ -8,9 +8,11 @@ Please follow [DARE](https://github.com/yule-BUAA/MergeLM) to install the depend
 
 ### Checkpoints
 
-Base model:[Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)
-Math reasoning: [WizardMath-7B-V1.0](https://huggingface.co/WizardLMTeam/WizardMath-7B-V1.0)
-Code generating: [Llama-2-7b-evolcodealpaca](https://huggingface.co/RedHatAI/Llama-2-7b-evolcodealpaca)
+Base model:[Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf) .
+
+Math reasoning: [WizardMath-7B-V1.0](https://huggingface.co/WizardLMTeam/WizardMath-7B-V1.0) .
+
+Code generating: [Llama-2-7b-evolcodealpaca](https://huggingface.co/RedHatAI/Llama-2-7b-evolcodealpaca) .
 
 
 
