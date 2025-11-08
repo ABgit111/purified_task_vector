@@ -29,7 +29,7 @@ python merge_pave_math_code.py \
     --num_ada_examples 512 512 512 \
     --rank_ratio 0.99829102 \
     --test_gsm8k \
-    --test_hendrycks_math
+    --test_hendrycks_math \
     --regularization 0.01
 ```
 
@@ -44,7 +44,7 @@ python merge_pave_math_code.py \
     --num_ada_examples 512 512 512 \
     --rank_ratio 0.9987793 \
     --test_gsm8k \
-    --test_hendrycks_math
+    --test_hendrycks_math \
     --regularization 0.5
 ```
 
