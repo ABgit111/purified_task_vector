@@ -6,7 +6,7 @@ Please follow [DARE](https://github.com/yule-BUAA/MergeLM) to install the depend
 
 **RoBERTa**: You can download the fine-tuned checkpoints from huggingface [here](https://huggingface.co/vanillaOVO/roberta_base_glue_ckpts/tree/main).
 
-**DeBERTa**: Will be uploaded soon.
+**DeBERTa**: You can download the fine-tuned checkpoints from huggingface [here](https://huggingface.co/Hank1/deberta_glue/tree/main).
 
 ```
 │cktps/
