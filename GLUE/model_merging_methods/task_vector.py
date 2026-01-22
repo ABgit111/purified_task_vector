@@ -196,8 +196,8 @@ class Ada_TaskVector_Cholesky:
                                 L = torch.linalg.cholesky(C_finetuned_reduced).T
                                 L_inverse = torch.inverse(L)
                                 # U_fine, S_fine, Vh_fine = torch.linalg.svd(L @ W_fine.transpose(0, 1), full_matrices=False)
-                                # U_fine, S_fine, Vh_fine = torch.linalg.svd(C_finetuned_reduced @ W_fine.transpose(0, 1), full_matrices=False)
-                                U_fine, S_fine, Vh_fine = torch.linalg.svd(W_fine.transpose(0, 1), full_matrices=False)
+                                U_fine, S_fine, Vh_fine = torch.linalg.svd(C_finetuned_reduced @ W_fine.transpose(0, 1), full_matrices=False)
+                                # U_fine, S_fine, Vh_fine = torch.linalg.svd(W_fine.transpose(0, 1), full_matrices=False)
                                 # U_fine, S_fine, Vh_fine = torch.linalg.svd(C_random @ W_fine.transpose(0, 1), full_matrices=False)
                                 # U_fine, S_fine, Vh_fine = torch.linalg.svd(S_finetuned @ W_fine.transpose(0, 1), full_matrices=False)
 
@@ -212,24 +212,24 @@ class Ada_TaskVector_Cholesky:
 
 
                                 # W_cr = L_inverse @ truncated_SVD_fine
-                                # W_cr = inv_C_finetuned @ truncated_SVD_fine
-                                W_cr = truncated_SVD_fine
+                                W_cr = inv_C_finetuned @ truncated_SVD_fine
+                                # W_cr = truncated_SVD_fine
                                 # W_cr = C_random_inverse @ truncated_SVD_fine
                                 # W_cr = S_finetuned_inverse @ truncated_SVD_fine
 
 
                                 # W_cr = W_cr*(torch.norm(W_cr)/torch.norm(W_fine))
 
-                                W_task_T = W_cr
-                                # W_task_T = W_cr - pretrained_param_dict[param_name].transpose(0, 1)
+                                # W_task_T = W_cr
+                                W_task_T = W_cr - pretrained_param_dict[param_name].transpose(0, 1)
 
                                 self.task_vector_param_dict[param_name] = W_task_T.transpose(0, 1)
                         else:
-                            self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name]
-                            # self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name] - pretrained_param_dict[param_name]
+                            # self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name]
+                            self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name] - pretrained_param_dict[param_name]
                     else:
-                        self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name]
-                        # self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name] - pretrained_param_dict[param_name]
+                        # self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name]
+                        self.task_vector_param_dict[param_name] = finetuned_param_dict[param_name] - pretrained_param_dict[param_name]
 
     def collect_layer_inputs_via_hook(self, model, trainer, linear_modules, num_examples):
         model.to('cuda:0')
