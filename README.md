@@ -1,6 +1,8 @@
-<h1 align="center">Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging</h1>
+<h1 align="center">Mitigating Model Merging Conflicts via Knowledge-Aware Task Vector
+Purification</h1>
 
-This is the official implementation of our paper **Purifying Task Vectors in Knowledge-Aware Subspace for Model Merging** ([arxiv](https://arxiv.org/abs/2510.14697)).
+This is the official implementation of our paper **Mitigating Model Merging Conflicts via Knowledge-Aware Task Vector
+Purification** ([arxiv](https://arxiv.org/abs/2510.14697)).
 
 We provide the code for merging on [GLUE benchmarks](./GLUE) (including RoBERTa and DeBERTa), [NLG tasks](./NLG), and [ViT models](./ViT).
 <img src='./images/fig1_v3.png'>
